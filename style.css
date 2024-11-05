@@ -1,0 +1,50 @@
+
+
+.a{
+    /* animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-name: xaxis; */
+    animation: xaxis 5s linear infinite 0s;
+    border: 2px solid black;
+
+}
+@keyframes xaxis{
+    0%{
+        /* transform: translateX(0vw); */
+        transform:  translateX(0vw) rotate(0deg);
+
+    }
+    50%{
+        /* transform: translateX(90vw) ;  */
+        transform: translateX(90vw)  rotate(360deg) ;
+        border-radius: 60px;
+
+
+    }
+    100%{
+        /* transform: translateX(0vw)  ; */
+        transform:  translateX(0vw) rotate(0deg);
+
+    }
+
+}
+
+.b{
+    animation: yaxis 5s linear infinite 0s;
+    border: 2px solid black;
+}
+@keyframes yaxis{
+    0%{
+        transform: translateY(0vh) rotate(0deg);
+
+    }
+    50%{
+        transform: translateY(60vh) rotate(360deg);
+        border-radius: 60px;
+
+    }
+    100%{
+        transform: translateY(0vh) rotate(0deg);
+    }
+
+}
